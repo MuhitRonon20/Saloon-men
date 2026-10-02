@@ -329,6 +329,7 @@ function BookingOverlay({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
       }, 700);
       return () => clearTimeout(t);
     }
+    return undefined;
   }, [isOpen]);
 
   const validate = (): boolean => {
